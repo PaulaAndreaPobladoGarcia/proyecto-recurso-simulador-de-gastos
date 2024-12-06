@@ -2,6 +2,8 @@ import os
 from menu.registerExpenseMenu import register_expense_menu
 from menu.listExpensesMenu import list_expenses_menu
 from menu.calculateTotalMenu import calculate_total_menu
+from menu.generateReportMenu import generate_report_menu
+
 def main():
     while True:
         os.system('cls' if os.name == 'nt' else 'clear')
@@ -23,8 +25,10 @@ def main():
         elif option == '3':
             calculate_total_menu()
         elif option == '4':
-             print("¿Desea salir del programa? (S/N): ", end="")
-             if input().lower() == 's':
+            generate_report_menu()
+        elif option == '5':
+            print("¿Desea salir del programa? (S/N): ", end="")
+            if input().lower() == 's':
                 break
 
 if __name__ == "__main__":

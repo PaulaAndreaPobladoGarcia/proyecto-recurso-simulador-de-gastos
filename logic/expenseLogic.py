@@ -1,3 +1,4 @@
+from storage.database import load_data
 
 def calculate_total(period):
     data = load_data()
@@ -11,9 +12,9 @@ def calculate_total(period):
 def generate_report(period):
     data = load_data()
     
-    
+   
     if period == '1':  # Diario
-        return "Reporte Diario: " + str(data['gastos']) 
+        return "Reporte Diario: " + str(data['gastos'])  
     elif period == '2':  # Semanal
         return "Reporte Semanal"
     elif period == '3':  # Mensual

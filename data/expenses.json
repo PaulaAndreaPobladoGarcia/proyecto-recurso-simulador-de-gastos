@@ -1,5 +1,10 @@
 {
     "gastos": [
-        
+        {
+            "monto": 4000.0,
+            "categoria": "comida",
+            "descripcion": "mantequilla",
+            "fecha": "2024-12-06"
+        }
     ]
 }
